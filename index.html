@@ -20,7 +20,6 @@ body{
 }
 
 /* HEADER */
-
 .header{
     background:#ffffff;
     border-bottom:1px solid #e8ebf0;
@@ -76,7 +75,6 @@ body{
 }
 
 /* MAIN */
-
 .container{
     max-width:1050px;
     margin:35px auto;
@@ -84,7 +82,6 @@ body{
 }
 
 /* SEARCH */
-
 .search-card{
     background:#111827;
     border-radius:20px;
@@ -137,7 +134,6 @@ body{
 }
 
 /* ERROR */
-
 #error{
     display:none;
     margin-top:15px;
@@ -150,14 +146,12 @@ body{
 }
 
 /* RESULT */
-
 #result{
     display:none;
     margin-top:22px;
 }
 
 /* STATUS */
-
 .status-card{
     background:#ffffff;
     border-radius:18px;
@@ -186,9 +180,9 @@ body{
     margin-top:5px;
 }
 
-.delivered{
-    background:#e8f8ef;
-    color:#12834a;
+.status-badge{
+    background:#fff6df;
+    color:#9a6a00;
     padding:9px 14px;
     border-radius:30px;
     font-size:12px;
@@ -204,7 +198,6 @@ body{
 }
 
 /* INFORMATION */
-
 .grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -252,7 +245,6 @@ body{
 }
 
 /* TRACKING HISTORY */
-
 .timeline-card{
     background:#ffffff;
     border:1px solid #e8ebf0;
@@ -286,8 +278,6 @@ body{
     padding-bottom:0;
 }
 
-/* GREEN CIRCLES */
-
 .circle{
     position:absolute;
     left:-40px;
@@ -320,7 +310,6 @@ body{
 }
 
 /* NOTICE */
-
 .notice{
     margin-top:18px;
     background:#ffffff;
@@ -333,7 +322,6 @@ body{
 }
 
 /* FOOTER */
-
 .footer{
     text-align:center;
     color:#9299a4;
@@ -342,7 +330,6 @@ body{
 }
 
 /* MOBILE */
-
 @media(max-width:650px){
 
     .header{
@@ -414,7 +401,7 @@ body{
         font-size:20px;
     }
 
-    .delivered{
+    .status-badge{
         font-size:11px;
     }
 
@@ -430,8 +417,6 @@ body{
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header class="header">
 
@@ -458,15 +443,13 @@ body{
         </div>
 
         <div class="demo-badge">
-            DEMO TRACKING
+            CHECK YOUR PARCEL
         </div>
 
     </div>
 
 </header>
 
-
-<!-- MAIN -->
 
 <main class="container">
 
@@ -508,7 +491,7 @@ body{
 
     <div id="result">
 
-        <!-- STATUS CARD -->
+        <!-- STATUS -->
 
         <section class="status-card">
 
@@ -526,18 +509,18 @@ body{
 
                 </div>
 
-                <div class="delivered">
-                    DELIVERED
+                <div class="status-badge">
+                    EXPECTED DELIVERY
                 </div>
 
             </div>
 
             <div class="status-message">
 
-                Shipment delivered successfully on
+                Expected delivery:
 
                 <strong>
-                    01 October 2026 at 12:00 PM
+                    26 October 2026, 2:00 PM – 3:00 PM
                 </strong>.
 
             </div>
@@ -548,8 +531,6 @@ body{
         <!-- INFORMATION -->
 
         <div class="grid">
-
-            <!-- RECEIVER -->
 
             <section class="info-card">
 
@@ -598,8 +579,6 @@ body{
             </section>
 
 
-            <!-- ROUTE -->
-
             <section class="info-card">
 
                 <div class="section-title">
@@ -633,11 +612,11 @@ body{
                 <div class="info">
 
                     <div class="label">
-                        Delivery
+                        Expected Delivery
                     </div>
 
                     <div class="value">
-                        01 Oct 2026 • 12:00 PM
+                        26 Oct 2026 • 2:00 PM – 3:00 PM
                     </div>
 
                 </div>
@@ -657,7 +636,7 @@ body{
 
             <div class="timeline">
 
-                <!-- 1 -->
+                <!-- BOOKING CREATED -->
 
                 <div class="event">
 
@@ -679,7 +658,7 @@ body{
                 </div>
 
 
-                <!-- 2 -->
+                <!-- PICKED UP -->
 
                 <div class="event">
 
@@ -701,7 +680,7 @@ body{
                 </div>
 
 
-                <!-- 3 -->
+                <!-- IN TRANSIT -->
 
                 <div class="event">
 
@@ -724,23 +703,24 @@ body{
                 </div>
 
 
-                <!-- 4 -->
+                <!-- EXPECTED DELIVERY -->
 
                 <div class="event">
 
                     <div class="circle"></div>
 
                     <div class="event-title">
-                        Delivered
+                        Expected Delivery
                     </div>
 
                     <div class="event-time">
-                        01 Oct 2026 • 12:00 PM
+                        26 Oct 2026 • 02:00 PM – 03:00 PM
                     </div>
 
                     <div class="event-description">
-                        Parcel delivered to the receiver
-                        at Bangalore, Karnataka.
+                        Parcel is scheduled for delivery
+                        to the receiver in Bangalore,
+                        Karnataka.
                     </div>
 
                 </div>
@@ -749,29 +729,13 @@ body{
 
         </section>
 
-
-        <!-- DEMO NOTICE -->
-
-        <div class="notice">
-
-            This is a privately created demonstration
-            tracking page. It is not connected to any
-            courier company's live tracking system and
-            does not verify a real shipment.
-
-        </div>
-
     </div>
 
 </main>
 
 
-<!-- FOOTER -->
-
 <footer class="footer">
-
-    © 2026 Premium Parcel Tracking • Demo
-
+    © 2026 Premium Parcel Tracking •
 </footer>
 
 
@@ -818,15 +782,12 @@ function trackShipment(){
     }
 }
 
-
 document
 .getElementById("trackingInput")
 .addEventListener("keydown",function(event){
 
     if(event.key === "Enter"){
-
         trackShipment();
-
     }
 
 });
@@ -834,4 +795,4 @@ document
 </script>
 
 </body>
-  </html>
+</html>

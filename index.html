@@ -3,27 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Premium Parcel Tracking</title>
+<title>Premium Parcel Tracking - GIFTS</title>
 
 <style>
 *{
+    box-sizing:border-box;
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:#f5f7fb;
+    background:#f4f6f9;
     color:#172033;
 }
 
-/* HEADER */
-
 .header{
-    background:#ffffff;
-    border-bottom:1px solid #e8ebf0;
+    background:#fff;
+    border-bottom:1px solid #e5e7eb;
     padding:18px 20px;
 }
 
@@ -31,14 +28,14 @@ body{
     max-width:1050px;
     margin:auto;
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
     display:flex;
     align-items:center;
-    gap:11px;
+    gap:10px;
 }
 
 .logo-icon{
@@ -46,11 +43,11 @@ body{
     height:42px;
     border-radius:12px;
     background:#111827;
-    color:#ffffff;
+    color:#fff;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:21px;
+    font-size:20px;
     font-weight:800;
 }
 
@@ -61,26 +58,24 @@ body{
 
 .logo-sub{
     font-size:11px;
-    color:#7b8493;
-    margin-top:2px;
+    color:#8a929e;
+    margin-top:3px;
 }
 
-.demo-badge{
+.demo{
+    background:#fff5d8;
+    color:#805d00;
+    border:1px solid #f0dfa8;
+    padding:7px 11px;
+    border-radius:20px;
     font-size:10px;
-    font-weight:700;
-    color:#765900;
-    background:#fff5d6;
-    border:1px solid #f2df9b;
-    padding:7px 10px;
-    border-radius:30px;
+    font-weight:800;
 }
-
-/* MAIN */
 
 .container{
     max-width:1050px;
-    margin:35px auto;
-    padding:0 18px;
+    margin:30px auto;
+    padding:0 16px;
 }
 
 /* SEARCH */
@@ -89,46 +84,47 @@ body{
     background:#111827;
     border-radius:20px;
     padding:30px;
-    color:#ffffff;
-    box-shadow:0 15px 40px rgba(17,24,39,.15);
+    box-shadow:0 18px 45px rgba(17,24,39,.16);
 }
 
 .search-title{
-    font-size:26px;
+    color:#fff;
+    font-size:27px;
     font-weight:800;
-    margin-bottom:7px;
 }
 
 .search-subtitle{
     color:#b9c0cc;
     font-size:14px;
+    margin-top:7px;
     margin-bottom:22px;
 }
 
 .search-box{
     display:flex;
-    background:#ffffff;
-    border-radius:12px;
+    gap:7px;
+    background:#fff;
     padding:5px;
+    border-radius:13px;
 }
 
 .search-box input{
     flex:1;
+    min-width:0;
     border:0;
     outline:none;
     padding:14px;
     font-size:15px;
-    color:#172033;
-    border-radius:10px;
+    border-radius:9px;
 }
 
 .search-box button{
     border:0;
     background:#111827;
-    color:#ffffff;
+    color:#fff;
     padding:0 25px;
     border-radius:9px;
-    font-weight:700;
+    font-weight:800;
     cursor:pointer;
 }
 
@@ -136,16 +132,14 @@ body{
     background:#263247;
 }
 
-/* ERROR */
-
 #error{
     display:none;
-    margin-top:15px;
-    padding:12px 15px;
-    background:#fff0f0;
-    color:#c62828;
-    border:1px solid #ffd0d0;
+    margin-top:14px;
+    padding:12px;
     border-radius:10px;
+    background:#fff0f0;
+    border:1px solid #ffd0d0;
+    color:#c62828;
     font-size:13px;
 }
 
@@ -153,16 +147,14 @@ body{
 
 #result{
     display:none;
-    margin-top:22px;
+    margin-top:20px;
 }
 
-/* STATUS */
-
-.status-card{
-    background:#ffffff;
+.card{
+    background:#fff;
+    border:1px solid #e6e9ee;
     border-radius:18px;
-    padding:25px;
-    border:1px solid #e8ebf0;
+    padding:24px;
     box-shadow:0 8px 25px rgba(0,0,0,.05);
 }
 
@@ -173,11 +165,11 @@ body{
     gap:15px;
 }
 
-.tracking-label{
-    color:#89919e;
-    font-size:11px;
+.label{
+    color:#8a929e;
+    font-size:10px;
     text-transform:uppercase;
-    letter-spacing:.6px;
+    letter-spacing:.7px;
 }
 
 .tracking-number{
@@ -186,43 +178,40 @@ body{
     margin-top:5px;
 }
 
-.status-badge{
-    background:#fff6df;
-    color:#9a6a00;
+.status{
+    background:#e8f8ef;
+    color:#12834a;
     padding:9px 14px;
-    border-radius:30px;
-    font-size:12px;
+    border-radius:25px;
+    font-size:11px;
     font-weight:800;
 }
 
 .status-message{
+    border-top:1px solid #edf0f4;
     margin-top:18px;
     padding-top:18px;
-    border-top:1px solid #edf0f4;
-    color:#606a78;
+    color:#626c79;
     font-size:13px;
 }
 
-/* DELIVERY CHARGE DEMO */
+/* DELIVERY CHARGE */
 
 .charge-card{
     position:relative;
     overflow:hidden;
     display:flex;
     align-items:center;
-    gap:18px;
+    gap:17px;
     margin-top:18px;
     padding:22px;
     border-radius:20px;
-
-    background:
-        linear-gradient(135deg,#ffffff,#f8fafc);
-
+    background:linear-gradient(135deg,#fff,#f8fafc);
     border:1px solid #e5e7eb;
 
     box-shadow:
-        0 18px 45px rgba(15,23,42,.18),
-        0 5px 15px rgba(15,23,42,.08);
+        0 20px 50px rgba(15,23,42,.18),
+        0 6px 18px rgba(15,23,42,.08);
 }
 
 .charge-card:before{
@@ -239,40 +228,19 @@ body{
     width:52px;
     height:52px;
     flex-shrink:0;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     border-radius:15px;
-
     background:#fff7e6;
     color:#b76b00;
-
     font-size:23px;
     font-weight:800;
-
-    box-shadow:
-        0 8px 20px rgba(245,158,11,.18);
-}
-
-.charge-content{
-    flex:1;
-}
-
-.charge-label{
-    font-size:10px;
-    text-transform:uppercase;
-    letter-spacing:.8px;
-    color:#8a929e;
-    font-weight:700;
 }
 
 .charge-title{
-    margin-top:4px;
     font-size:15px;
     font-weight:800;
-    color:#172033;
 }
 
 .charge-amount{
@@ -284,25 +252,44 @@ body{
 
 .charge-note{
     margin-top:5px;
-    font-size:10px;
-    line-height:1.4;
     color:#7b8490;
+    font-size:10px;
 }
 
-/* INFORMATION */
+/* SHIPMENT DETAILS */
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px;
+.details-card{
     margin-top:18px;
 }
 
-.info-card{
-    background:#ffffff;
-    border:1px solid #e8ebf0;
-    border-radius:18px;
-    padding:22px;
+.info{
+    background:#f8f9fb;
+    border-radius:12px;
+    padding:14px;
+    margin-bottom:10px;
+}
+
+.info:last-child{
+    margin-bottom:0;
+}
+
+.info-label{
+    color:#8a929e;
+    font-size:10px;
+    text-transform:uppercase;
+    margin-bottom:5px;
+}
+
+.info-value{
+    font-size:14px;
+    font-weight:700;
+    line-height:1.5;
+}
+
+/* TIMELINE */
+
+.timeline-card{
+    margin-top:18px;
 }
 
 .section-title{
@@ -311,45 +298,8 @@ body{
     margin-bottom:18px;
 }
 
-.info{
-    background:#f8f9fb;
-    border-radius:12px;
-    padding:15px;
-    margin-bottom:10px;
-}
-
-.info:last-child{
-    margin-bottom:0;
-}
-
-.label{
-    font-size:10px;
-    color:#8a929e;
-    text-transform:uppercase;
-    letter-spacing:.5px;
-    margin-bottom:5px;
-}
-
-.value{
-    font-size:14px;
-    font-weight:700;
-    color:#202838;
-    line-height:1.5;
-}
-
-/* TRACKING HISTORY */
-
-.timeline-card{
-    background:#ffffff;
-    border:1px solid #e8ebf0;
-    border-radius:18px;
-    padding:25px;
-    margin-top:18px;
-}
-
 .timeline{
     position:relative;
-    margin-top:20px;
     padding-left:40px;
 }
 
@@ -380,49 +330,46 @@ body{
     height:21px;
     border-radius:50%;
     background:#16a35a;
-    border:4px solid #ffffff;
+    border:4px solid #fff;
     box-shadow:0 0 0 2px #bde8cf;
 }
 
 .event-title{
     font-size:15px;
     font-weight:800;
-    color:#172033;
 }
 
 .event-time{
+    margin-top:5px;
     color:#8a929e;
     font-size:12px;
-    margin-top:5px;
 }
 
 .event-description{
+    margin-top:5px;
     color:#626c79;
     font-size:13px;
     line-height:1.5;
-    margin-top:5px;
 }
 
 /* NOTICE */
 
 .notice{
     margin-top:18px;
-    background:#ffffff;
-    border:1px solid #e8ebf0;
-    border-radius:15px;
-    padding:16px;
+    padding:15px;
+    border:1px solid #e6e9ee;
+    border-radius:14px;
+    background:#fff;
     color:#7b8490;
-    font-size:11px;
+    font-size:10px;
     line-height:1.6;
 }
 
-/* FOOTER */
-
 .footer{
     text-align:center;
+    padding:30px 15px;
     color:#9299a4;
     font-size:11px;
-    padding:30px 15px;
 }
 
 /* MOBILE */
@@ -430,25 +377,15 @@ body{
 @media(max-width:650px){
 
     .header{
-        padding:16px 14px;
-    }
-
-    .header-inner{
-        align-items:center;
-        gap:8px;
+        padding:15px;
     }
 
     .logo-text{
         font-size:18px;
     }
 
-    .logo-sub{
-        font-size:10px;
-    }
-
-    .demo-badge{
+    .demo{
         font-size:8px;
-        padding:6px 8px;
     }
 
     .container{
@@ -458,20 +395,14 @@ body{
 
     .search-card{
         padding:22px;
-        border-radius:17px;
     }
 
     .search-title{
         font-size:22px;
     }
 
-    .search-subtitle{
-        line-height:1.5;
-    }
-
     .search-box{
         display:block;
-        padding:5px;
     }
 
     .search-box input{
@@ -485,51 +416,23 @@ body{
         margin-top:5px;
     }
 
-    .grid{
-        grid-template-columns:1fr;
-    }
-
     .status-top{
-        align-items:flex-start;
         flex-direction:column;
-    }
-
-    .tracking-number{
-        font-size:20px;
-    }
-
-    .status-badge{
-        font-size:11px;
+        align-items:flex-start;
     }
 
     .charge-card{
         padding:18px;
-        gap:14px;
-    }
-
-    .charge-icon{
-        width:46px;
-        height:46px;
     }
 
     .charge-amount{
         font-size:22px;
-    }
-
-    .timeline-card{
-        padding:22px 20px;
-    }
-
-    .event-description{
-        font-size:13px;
     }
 }
 </style>
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header class="header">
 
@@ -555,16 +458,14 @@ body{
 
         </div>
 
-        <div class="demo-badge">
-            FILL YOUR CODE 
+        <div class="demo">
+            CHECK PARCEL STATUS
         </div>
 
     </div>
 
 </header>
 
-
-<!-- MAIN -->
 
 <main class="container">
 
@@ -583,8 +484,8 @@ body{
         <div class="search-box">
 
             <input
-                type="text"
                 id="trackingInput"
+                type="text"
                 placeholder="Enter Tracking ID"
                 autocomplete="off"
             >
@@ -606,15 +507,15 @@ body{
 
     <div id="result">
 
-        <!-- STATUS -->
+        <!-- ITEM BOOKED -->
 
-        <section class="status-card">
+        <section class="card">
 
             <div class="status-top">
 
                 <div>
 
-                    <div class="tracking-label">
+                    <div class="label">
                         Tracking ID
                     </div>
 
@@ -624,19 +525,21 @@ body{
 
                 </div>
 
-                <div class="status-badge">
-                    EXPECTED DELIVERY
+                <div class="status">
+                    ITEM BOOKED
                 </div>
 
             </div>
 
             <div class="status-message">
 
+                Your item has been successfully booked.
+
                 Expected delivery:
 
                 <strong>
                     26 October 2026, 2:00 PM – 3:00 PM
-                </strong>.
+                </strong>
 
             </div>
 
@@ -651,14 +554,14 @@ body{
                 ₹
             </div>
 
-            <div class="charge-content">
+            <div>
 
-                <div class="charge-label">
+                <div class="label">
                     Delivery Charge
                 </div>
 
                 <div class="charge-title">
-                    Demo Delivery Charge Pending
+                    PAY Delivery Charge Pending
                 </div>
 
                 <div class="charge-amount">
@@ -666,7 +569,7 @@ body{
                 </div>
 
                 <div class="charge-note">
-                    REAL AMOUNT ONLY — THIS IS A REAL PAYMENT REQUEST.
+                    REAL AMOUNT ONLY — THIS IS  A REAL PAYMENT REQUEST.
                 </div>
 
             </div>
@@ -674,111 +577,58 @@ body{
         </div>
 
 
-        <!-- INFORMATION -->
+        <!-- RECEIVER DETAILS -->
 
-        <div class="grid">
+        <section class="card details-card">
 
-            <!-- RECEIVER -->
+            <div class="section-title">
+                Receiver Details
+            </div>
 
-            <section class="info-card">
+            <div class="info">
 
-                <div class="section-title">
-                    Shipment Details
+                <div class="info-label">
+                    Receiver
                 </div>
 
-                <div class="info">
-
-                    <div class="label">
-                        Receiver
-                    </div>
-
-                    <div class="value">
-                        Dinesh Choudhary
-                    </div>
-
+                <div class="info-value">
+                    Dinesh Choudhary
                 </div>
 
-                <div class="info">
+            </div>
 
-                    <div class="label">
-                        Contact
-                    </div>
+            <div class="info">
 
-                    <div class="value">
-                        7019512902
-                    </div>
-
+                <div class="info-label">
+                    Contact
                 </div>
 
-                <div class="info">
-
-                    <div class="label">
-                        Destination
-                    </div>
-
-                    <div class="value">
-                        #25, 3rd Cross, Hosapalya Main Road,
-                        Hosapalya, Opp. to Royal Bakery,
-                        Bangalore - 560102
-                    </div>
-
+                <div class="info-value">
+                    7019512902
                 </div>
 
-            </section>
+            </div>
 
+            <div class="info">
 
-            <!-- ROUTE -->
-
-            <section class="info-card">
-
-                <div class="section-title">
-                    Shipment Route
+                <div class="info-label">
+                    Delivery Address
                 </div>
 
-                <div class="info">
-
-                    <div class="label">
-                        Origin
-                    </div>
-
-                    <div class="value">
-                        Vadodara, Gujarat
-                    </div>
-
+                <div class="info-value">
+                    #25, 3rd Cross, Hosapalya Main Road,
+                    Hosapalya, Opp. to Royal Bakery,
+                    Bangalore - 560102
                 </div>
 
-                <div class="info">
+            </div>
 
-                    <div class="label">
-                        Current Movement
-                    </div>
-
-                    <div class="value">
-                        Approx. 25 KM from origin shop
-                    </div>
-
-                </div>
-
-                <div class="info">
-
-                    <div class="label">
-                        Expected Delivery
-                    </div>
-
-                    <div class="value">
-                        26 Oct 2026 • 2:00 PM – 3:00 PM
-                    </div>
-
-                </div>
-
-            </section>
-
-        </div>
+        </section>
 
 
         <!-- TRACKING HISTORY -->
 
-        <section class="timeline-card">
+        <section class="card timeline-card">
 
             <div class="section-title">
                 Tracking History
@@ -786,14 +636,14 @@ body{
 
             <div class="timeline">
 
-                <!-- BOOKING CREATED -->
+                <!-- ITEM BOOKED -->
 
                 <div class="event">
 
                     <div class="circle"></div>
 
                     <div class="event-title">
-                        Booking Created
+                        Item Booked
                     </div>
 
                     <div class="event-time">
@@ -801,30 +651,7 @@ body{
                     </div>
 
                     <div class="event-description">
-                        Shipment details registered for
-                        delivery to Bangalore, Karnataka.
-                    </div>
-
-                </div>
-
-
-                <!-- PICKED UP -->
-
-                <div class="event">
-
-                    <div class="circle"></div>
-
-                    <div class="event-title">
-                        Shipment Picked Up
-                    </div>
-
-                    <div class="event-time">
-                        29 Sep 2026 • 06:00 PM
-                    </div>
-
-                    <div class="event-description">
-                        Parcel received at the origin
-                        location in Vadodara, Gujarat.
+                        Item booking has been successfully created.
                     </div>
 
                 </div>
@@ -841,13 +668,11 @@ body{
                     </div>
 
                     <div class="event-time">
-                        29 Sep 2026 • 08:30 PM
+                        Shipment Processing
                     </div>
 
                     <div class="event-description">
-                        Shipment departed from Vadodara
-                        origin area and is approximately
-                        25 KM from the shop.
+                        Item is currently in transit.
                     </div>
 
                 </div>
@@ -868,9 +693,7 @@ body{
                     </div>
 
                     <div class="event-description">
-                        Parcel is scheduled for delivery
-                        to the receiver in Bangalore,
-                        Karnataka.
+                        Expected delivery window for the receiver.
                     </div>
 
                 </div>
@@ -879,17 +702,13 @@ body{
 
         </section>
 
-
-        
     </div>
 
 </main>
 
 
 <footer class="footer">
-
-    © 2026 Premium Parcel Tracking • Demo
-
+    © 2026 Premium Parcel Tracking •
 </footer>
 
 
@@ -934,6 +753,9 @@ function trackShipment(){
     }
 }
 
+
+/* ENTER KEY SUPPORT */
+
 document
 .getElementById("trackingInput")
 .addEventListener("keydown",function(event){
@@ -947,4 +769,4 @@ document
 </script>
 
 </body>
-                        </html>
+</html>

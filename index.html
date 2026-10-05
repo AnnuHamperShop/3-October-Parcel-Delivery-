@@ -3,24 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premium Parcel Tracking - GIFTS</title>
+
+<title>Premium Parcel Tracking — CHECK HERE ✅</title>
 
 <style>
 *{
-    box-sizing:border-box;
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:#f4f6f9;
+    background:#f5f7fb;
     color:#172033;
 }
 
 .header{
     background:#fff;
-    border-bottom:1px solid #e5e7eb;
+    border-bottom:1px solid #e8ebf0;
     padding:18px 20px;
 }
 
@@ -28,14 +29,14 @@ body{
     max-width:1050px;
     margin:auto;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:11px;
 }
 
 .logo-icon{
@@ -47,7 +48,7 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:20px;
+    font-size:21px;
     font-weight:800;
 }
 
@@ -58,64 +59,61 @@ body{
 
 .logo-sub{
     font-size:11px;
-    color:#8a929e;
-    margin-top:3px;
+    color:#7b8493;
+    margin-top:2px;
 }
 
-.demo{
-    background:#fff5d8;
-    color:#805d00;
-    border:1px solid #f0dfa8;
-    padding:7px 11px;
-    border-radius:20px;
+.demo-badge{
     font-size:10px;
     font-weight:800;
+    color:#765900;
+    background:#fff5d6;
+    border:1px solid #f2df9b;
+    padding:7px 10px;
+    border-radius:30px;
 }
 
 .container{
     max-width:1050px;
-    margin:30px auto;
-    padding:0 16px;
+    margin:35px auto;
+    padding:0 18px;
 }
-
-/* SEARCH */
 
 .search-card{
     background:#111827;
     border-radius:20px;
     padding:30px;
-    box-shadow:0 18px 45px rgba(17,24,39,.16);
+    color:#fff;
+    box-shadow:0 15px 40px rgba(17,24,39,.15);
 }
 
 .search-title{
-    color:#fff;
-    font-size:27px;
+    font-size:26px;
     font-weight:800;
+    margin-bottom:7px;
 }
 
 .search-subtitle{
     color:#b9c0cc;
     font-size:14px;
-    margin-top:7px;
     margin-bottom:22px;
 }
 
 .search-box{
     display:flex;
-    gap:7px;
     background:#fff;
+    border-radius:12px;
     padding:5px;
-    border-radius:13px;
 }
 
 .search-box input{
     flex:1;
-    min-width:0;
     border:0;
     outline:none;
     padding:14px;
     font-size:15px;
-    border-radius:9px;
+    color:#172033;
+    border-radius:10px;
 }
 
 .search-box button{
@@ -124,7 +122,7 @@ body{
     color:#fff;
     padding:0 25px;
     border-radius:9px;
-    font-weight:800;
+    font-weight:700;
     cursor:pointer;
 }
 
@@ -134,27 +132,36 @@ body{
 
 #error{
     display:none;
-    margin-top:14px;
-    padding:12px;
-    border-radius:10px;
+    margin-top:15px;
+    padding:12px 15px;
     background:#fff0f0;
-    border:1px solid #ffd0d0;
     color:#c62828;
+    border:1px solid #ffd0d0;
+    border-radius:10px;
     font-size:13px;
 }
 
-/* RESULT */
-
 #result{
     display:none;
-    margin-top:20px;
+    margin-top:22px;
 }
 
-.card{
+.demo-warning{
+    background:#fff8df;
+    border:1px solid #f0d477;
+    color:#725800;
+    padding:13px 16px;
+    border-radius:12px;
+    font-size:12px;
+    line-height:1.5;
+    margin-bottom:18px;
+}
+
+.status-card{
     background:#fff;
-    border:1px solid #e6e9ee;
     border-radius:18px;
-    padding:24px;
+    padding:25px;
+    border:1px solid #e8ebf0;
     box-shadow:0 8px 25px rgba(0,0,0,.05);
 }
 
@@ -165,11 +172,11 @@ body{
     gap:15px;
 }
 
-.label{
-    color:#8a929e;
-    font-size:10px;
+.tracking-label{
+    color:#89919e;
+    font-size:11px;
     text-transform:uppercase;
-    letter-spacing:.7px;
+    letter-spacing:.6px;
 }
 
 .tracking-number{
@@ -178,118 +185,35 @@ body{
     margin-top:5px;
 }
 
-.status{
-    background:#e8f8ef;
-    color:#12834a;
+.pending{
+    background:#fff4d6;
+    color:#946c00;
     padding:9px 14px;
-    border-radius:25px;
-    font-size:11px;
+    border-radius:30px;
+    font-size:12px;
     font-weight:800;
 }
 
 .status-message{
-    border-top:1px solid #edf0f4;
     margin-top:18px;
     padding-top:18px;
-    color:#626c79;
+    border-top:1px solid #edf0f4;
+    color:#606a78;
     font-size:13px;
 }
 
-/* DELIVERY CHARGE */
-
-.charge-card{
-    position:relative;
-    overflow:hidden;
-    display:flex;
-    align-items:center;
-    gap:17px;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
     margin-top:18px;
+}
+
+.info-card{
+    background:#fff;
+    border:1px solid #e8ebf0;
+    border-radius:18px;
     padding:22px;
-    border-radius:20px;
-    background:linear-gradient(135deg,#fff,#f8fafc);
-    border:1px solid #e5e7eb;
-
-    box-shadow:
-        0 20px 50px rgba(15,23,42,.18),
-        0 6px 18px rgba(15,23,42,.08);
-}
-
-.charge-card:before{
-    content:"";
-    position:absolute;
-    left:0;
-    top:0;
-    bottom:0;
-    width:5px;
-    background:#f59e0b;
-}
-
-.charge-icon{
-    width:52px;
-    height:52px;
-    flex-shrink:0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:15px;
-    background:#fff7e6;
-    color:#b76b00;
-    font-size:23px;
-    font-weight:800;
-}
-
-.charge-title{
-    font-size:15px;
-    font-weight:800;
-}
-
-.charge-amount{
-    margin-top:5px;
-    font-size:25px;
-    font-weight:900;
-    color:#b45309;
-}
-
-.charge-note{
-    margin-top:5px;
-    color:#7b8490;
-    font-size:10px;
-}
-
-/* SHIPMENT DETAILS */
-
-.details-card{
-    margin-top:18px;
-}
-
-.info{
-    background:#f8f9fb;
-    border-radius:12px;
-    padding:14px;
-    margin-bottom:10px;
-}
-
-.info:last-child{
-    margin-bottom:0;
-}
-
-.info-label{
-    color:#8a929e;
-    font-size:10px;
-    text-transform:uppercase;
-    margin-bottom:5px;
-}
-
-.info-value{
-    font-size:14px;
-    font-weight:700;
-    line-height:1.5;
-}
-
-/* TIMELINE */
-
-.timeline-card{
-    margin-top:18px;
 }
 
 .section-title{
@@ -298,8 +222,85 @@ body{
     margin-bottom:18px;
 }
 
+.info{
+    background:#f8f9fb;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:10px;
+}
+
+.info:last-child{
+    margin-bottom:0;
+}
+
+.label{
+    font-size:10px;
+    color:#8a929e;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    margin-bottom:5px;
+}
+
+.value{
+    font-size:14px;
+    font-weight:700;
+    color:#202838;
+    line-height:1.5;
+}
+
+.charge-card{
+    margin-top:18px;
+    background:#fffdf5;
+    border:1px solid #f0d477;
+    border-radius:18px;
+    padding:25px;
+}
+
+.charge-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+}
+
+.charge-title{
+    font-size:18px;
+    font-weight:800;
+}
+
+.charge-sub{
+    color:#777;
+    font-size:12px;
+    margin-top:5px;
+}
+
+.amount{
+    font-size:25px;
+    font-weight:900;
+}
+
+.charge-status{
+    display:inline-block;
+    margin-top:15px;
+    padding:7px 11px;
+    border-radius:20px;
+    background:#fff0c2;
+    color:#8a6500;
+    font-size:11px;
+    font-weight:800;
+}
+
+.timeline-card{
+    background:#fff;
+    border:1px solid #e8ebf0;
+    border-radius:18px;
+    padding:25px;
+    margin-top:18px;
+}
+
 .timeline{
     position:relative;
+    margin-top:20px;
     padding-left:40px;
 }
 
@@ -337,55 +338,50 @@ body{
 .event-title{
     font-size:15px;
     font-weight:800;
+    color:#172033;
 }
 
 .event-time{
-    margin-top:5px;
     color:#8a929e;
     font-size:12px;
+    margin-top:5px;
 }
 
 .event-description{
-    margin-top:5px;
     color:#626c79;
     font-size:13px;
     line-height:1.5;
-}
-
-/* NOTICE */
-
-.notice{
-    margin-top:18px;
-    padding:15px;
-    border:1px solid #e6e9ee;
-    border-radius:14px;
-    background:#fff;
-    color:#7b8490;
-    font-size:10px;
-    line-height:1.6;
+    margin-top:5px;
 }
 
 .footer{
     text-align:center;
-    padding:30px 15px;
     color:#9299a4;
     font-size:11px;
+    padding:30px 15px;
 }
-
-/* MOBILE */
 
 @media(max-width:650px){
 
     .header{
-        padding:15px;
+        padding:16px 14px;
+    }
+
+    .header-inner{
+        gap:8px;
     }
 
     .logo-text{
         font-size:18px;
     }
 
-    .demo{
+    .logo-sub{
+        font-size:10px;
+    }
+
+    .demo-badge{
         font-size:8px;
+        padding:6px 8px;
     }
 
     .container{
@@ -395,14 +391,20 @@ body{
 
     .search-card{
         padding:22px;
+        border-radius:17px;
     }
 
     .search-title{
         font-size:22px;
     }
 
+    .search-subtitle{
+        line-height:1.5;
+    }
+
     .search-box{
         display:block;
+        padding:5px;
     }
 
     .search-box input{
@@ -416,17 +418,34 @@ body{
         margin-top:5px;
     }
 
+    .grid{
+        grid-template-columns:1fr;
+    }
+
     .status-top{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .tracking-number{
+        font-size:20px;
+    }
+
+    .charge-row{
         flex-direction:column;
         align-items:flex-start;
     }
 
-    .charge-card{
-        padding:18px;
+    .amount{
+        font-size:23px;
     }
 
-    .charge-amount{
-        font-size:22px;
+    .timeline-card{
+        padding:22px 20px;
+    }
+
+    .event-description{
+        font-size:13px;
     }
 }
 </style>
@@ -458,8 +477,8 @@ body{
 
         </div>
 
-        <div class="demo">
-            CHECK PARCEL STATUS
+        <div class="demo-badge">
+            CHECK ✅
         </div>
 
     </div>
@@ -469,8 +488,6 @@ body{
 
 <main class="container">
 
-    <!-- SEARCH -->
-
     <section class="search-card">
 
         <div class="search-title">
@@ -478,14 +495,14 @@ body{
         </div>
 
         <div class="search-subtitle">
-            Enter your tracking ID to view shipment information
+            Parcel tracking page — enter your tracking ID
         </div>
 
         <div class="search-box">
 
             <input
-                id="trackingInput"
                 type="text"
+                id="trackingInput"
                 placeholder="Enter Tracking ID"
                 autocomplete="off"
             >
@@ -503,132 +520,151 @@ body{
     </section>
 
 
-    <!-- RESULT -->
-
     <div id="result">
 
-        <!-- ITEM BOOKED -->
+        <div class="TRACK-warning">
 
-        <section class="card">
+            <strong>TRACK PAGE:</strong>
+            This is a Genuine shipment-tracking interface.
+            The delivery charge shown below is a Realistic amount only.
+
+        </div>
+
+
+        <section class="status-card">
 
             <div class="status-top">
 
                 <div>
 
-                    <div class="label">
+                    <div class="tracking-label">
                         Tracking ID
                     </div>
 
                     <div class="tracking-number">
-                        PPSVAD50114101
+                        PPSURAT395004
                     </div>
 
                 </div>
 
-                <div class="status">
-                    ITEM BOOKED
+                <div class="pending">
+                    PAYMENT PENDING
                 </div>
 
             </div>
 
             <div class="status-message">
-
-                Your item has been successfully booked.
-
-                Expected delivery:
-
-                <strong>
-                    26 October 2026, 2:00 PM – 3:00 PM
-                </strong>
-
+                Shipment status is currently shown as pending
+                in this Genuine.
             </div>
 
         </section>
 
 
-        <!-- DELIVERY CHARGE -->
+        <div class="grid">
 
-        <div class="charge-card">
+            <section class="info-card">
 
-            <div class="charge-icon">
-                ₹
-            </div>
-
-            <div>
-
-                <div class="label">
-                    Delivery Charge
+                <div class="section-title">
+                    Receiver Details
                 </div>
 
-                <div class="charge-title">
-                    PAY Delivery Charge Pending
+                <div class="info">
+
+                    <div class="label">
+                        Receiver
+                    </div>
+
+                    <div class="value">
+                        Mansi Mandani
+                    </div>
+
                 </div>
 
-                <div class="charge-amount">
-                    ₹1,998.09
+                <div class="info">
+
+                    <div class="label">
+                        Contact
+                    </div>
+
+                    <div class="value">
+                        7285051175
+                    </div>
+
                 </div>
 
-                <div class="charge-note">
-                    REAL AMOUNT ONLY — THIS IS  A REAL PAYMENT REQUEST.
+                <div class="info">
+
+                    <div class="label">
+                        Professional 
+                    </div>
+
+                    <div class="value">
+                        Surat, Gujarat - 395004, India
+                    </div>
+
                 </div>
 
-            </div>
+            </section>
+
+
+            <section class="info-card">
+
+                <div class="section-title">
+                    Delivery Address
+                </div>
+
+                <div class="info">
+
+                    <div class="label">
+                        Address
+                    </div>
+
+                    <div class="value">
+                        BB 2 Sharp Enterprises,<br>
+                        Ground Floor, Near Shivam Jewels,<br>
+                        Vasta Devdi Road,<br>
+                        Katargam, Surat,<br>
+                        Gujarat - 395004, India
+                    </div>
+
+                </div>
+
+            </section>
 
         </div>
 
 
-        <!-- RECEIVER DETAILS -->
+        <section class="charge-card">
 
-        <section class="card details-card">
+            <div class="charge-row">
 
-            <div class="section-title">
-                Receiver Details
-            </div>
+                <div>
 
-            <div class="info">
+                    <div class="charge-title">
+                        Delivery Charge
+                    </div>
 
-                <div class="info-label">
-                    Receiver
+                    <div class="charge-sub">
+                        PAY PENDING AMOUNT
+                    </div>
+
                 </div>
 
-                <div class="info-value">
-                    Dinesh Choudhary
-                </div>
-
-            </div>
-
-            <div class="info">
-
-                <div class="info-label">
-                    Contact
-                </div>
-
-                <div class="info-value">
-                    7019512902
+                <div class="amount">
+                    ₹1,998.90
                 </div>
 
             </div>
 
-            <div class="info">
-
-                <div class="info-label">
-                    Delivery Address
-                </div>
-
-                <div class="info-value">
-                    #25, 3rd Cross, Hosapalya Main Road,
-                    Hosapalya, Opp. to Royal Bakery,
-                    Bangalore - 560102
-                </div>
-
+            <div class="charge-status">
+                PAY — PAYMENT PENDING
             </div>
 
         </section>
 
 
-        <!-- TRACKING HISTORY -->
-
-        <section class="card timeline-card">
+        <section class="timeline-card">
 
             <div class="section-title">
                 Tracking History
@@ -636,67 +672,94 @@ body{
 
             <div class="timeline">
 
-                <!-- ITEM BOOKED -->
+
+                <!-- BOOKING CREATED -->
 
                 <div class="event">
 
                     <div class="circle"></div>
 
                     <div class="event-title">
-                        Item Booked
+                        Booking Created
                     </div>
 
                     <div class="event-time">
-                        29 Sep 2026 • 05:30 PM
+                        05 October 2026 • 08:33 PM
                     </div>
 
                     <div class="event-description">
-                        Item booking has been successfully created.
+                        Shipment details registered for
+                        delivery to Surat, Gujarat.
                     </div>
 
                 </div>
 
 
-                <!-- IN TRANSIT -->
+                <!-- ORDER CONFIRMED -->
 
                 <div class="event">
 
                     <div class="circle"></div>
 
                     <div class="event-title">
-                        In Transit
+                        Order Confirmed
                     </div>
 
                     <div class="event-time">
-                        Shipment Processing
+                        05 October 2026 • 08:45 PM
                     </div>
 
                     <div class="event-description">
-                        Item is currently in transit.
+                        Order has been confirmed and shipment
+                        processing has started.
                     </div>
 
                 </div>
 
 
-                <!-- EXPECTED DELIVERY -->
+                <!-- DELIVERY CHARGE -->
 
                 <div class="event">
 
                     <div class="circle"></div>
 
                     <div class="event-title">
-                        Expected Delivery
+                        Delivery Charge
                     </div>
 
                     <div class="event-time">
-                        26 Oct 2026 • 02:00 PM – 03:00 PM
+                        05 October 2026 • 
                     </div>
 
                     <div class="event-description">
-                        Expected delivery window for the receiver.
+                        Pending delivery charge displayed:
+                        ₹1,998.90.
                     </div>
 
                 </div>
+
+
+                <!-- PARCEL DISPATCH -->
+
+                <div class="event">
+
+                    <div class="circle"></div>
+
+                    <div class="event-title">
+                        PARCEL Dispatch
+                    </div>
+
+                    <div class="event-time">
+                        15 October 2026 • 02:00 PM – 03:00 PM
+                    </div>
+
+                    <div class="event-description">
+                        Parcel dispatch is scheduled for
+                        15 October 2026 between 2:00 PM and 3:00 PM.
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -714,7 +777,7 @@ body{
 
 <script>
 
-const VALID_TRACKING_ID = "PPSVAD50114101";
+const VALID_TRACKING_ID = "PPSURAT395004";
 
 function trackShipment(){
 
@@ -752,9 +815,6 @@ function trackShipment(){
 
     }
 }
-
-
-/* ENTER KEY SUPPORT */
 
 document
 .getElementById("trackingInput")

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CHECK</title>
+<title>Parcel Tracking</title>
 
 <style>
 *{
@@ -126,6 +126,10 @@ body{
     cursor:pointer;
 }
 
+.search-box button:hover{
+    background:#263247;
+}
+
 #error{
     display:none;
     margin-top:15px;
@@ -244,6 +248,7 @@ body{
     line-height:1.5;
 }
 
+/* DELIVERY */
 .delivery-card{
     margin-top:18px;
     background:#f5fbff;
@@ -270,6 +275,51 @@ body{
     margin-top:6px;
 }
 
+/* DEMO DELIVERY CHARGE */
+.demo-charge-card{
+    margin-top:18px;
+    background:#fff8df;
+    border:2px solid #f0d477;
+    border-radius:18px;
+    padding:22px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.04);
+}
+
+.demo-charge-badge{
+    display:inline-block;
+    background:#fff0c2;
+    color:#765900;
+    border:1px solid #e3c65d;
+    padding:7px 12px;
+    border-radius:20px;
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.4px;
+}
+
+.demo-charge-title{
+    margin-top:14px;
+    font-size:18px;
+    font-weight:800;
+    color:#4b3b00;
+}
+
+.demo-charge-amount{
+    margin-top:7px;
+    font-size:28px;
+    font-weight:900;
+    color:#6b5100;
+}
+
+.demo-charge-text{
+    margin-top:8px;
+    color:#776b48;
+    font-size:12px;
+    line-height:1.5;
+}
+
+/* TIMELINE */
 .timeline-card{
     background:#fff;
     border:1px solid #e8ebf0;
@@ -414,6 +464,10 @@ body{
     .delivery-date{
         font-size:22px;
     }
+
+    .demo-charge-amount{
+        font-size:24px;
+    }
 }
 </style>
 </head>
@@ -426,22 +480,26 @@ body{
 
         <div class="logo">
 
-            <div class="logo-icon">P</div>
+            <div class="logo-icon">
+                P
+            </div>
 
             <div>
+
                 <div class="logo-text">
                     Premium Parcel
                 </div>
 
                 <div class="logo-sub">
-                     Shipment Tracking
+                    Shipment Tracking
                 </div>
+
             </div>
 
         </div>
 
         <div class="demo-badge">
-            CHECK HERE 
+            PARCEL TRACK ONLY.
         </div>
 
     </div>
@@ -477,7 +535,8 @@ body{
         </div>
 
         <div id="error">
-         Tracking ID not found. Please check the Tracking ID.
+            Tracking ID not found.
+            Please check the Tracking ID.
         </div>
 
     </section>
@@ -493,7 +552,7 @@ body{
                 <div>
 
                     <div class="tracking-label">
-                     Tracking ID
+                         Tracking ID
                     </div>
 
                     <div class="tracking-number">
@@ -506,11 +565,6 @@ body{
                     DELIVERY STATUS
                 </div>
 
-            </div>
-
-            <div class="status-message">
-                This shipment information is displayed as a
-                Parcel Box System.
             </div>
 
         </section>
@@ -622,6 +676,8 @@ body{
         </div>
 
 
+        <!-- EXPECTED DELIVERY -->
+
         <section class="delivery-card">
 
             <div class="delivery-title">
@@ -639,10 +695,31 @@ body{
         </section>
 
 
+        <!--  DELIVERY CHARGE -->
+
+        <section class="pay-charge-card">
+
+            <div class="pay-charge-badge">
+                NOTE — PAY Delivery Charge Immediately.
+            </div>
+
+            <div class="Delivery-charge-title">
+                Delivery Charge
+            </div>
+
+            <div class="Pay-charge-amount">
+                ₹1,998.90
+            </div>
+
+        </section>
+
+
+        <!-- TRACKING HISTORY -->
+
         <section class="timeline-card">
 
             <div class="section-title">
-                See Tracking History
+                Parcel Tracking History
             </div>
 
             <div class="timeline">
@@ -661,7 +738,7 @@ body{
                     </div>
 
                     <div class="event-description">
-                    shipment record created.
+                     shipment record created.
                     </div>
 
                 </div>
@@ -680,7 +757,27 @@ body{
                     </div>
 
                     <div class="event-description">
-                    Real order confirmation recorded.
+                        Parcel order confirmation recorded.
+                    </div>
+
+                </div>
+
+
+                <div class="event">
+
+                    <div class="circle"></div>
+
+                    <div class="event-title">
+                        Delivery Charge
+                    </div>
+
+                    <div class="event-time">
+                        Delivery Information
+                    </div>
+
+                    <div class="event-description">
+                        Pay delivery charge:
+                        ₹1,998.90. Not payable.
                     </div>
 
                 </div>
@@ -699,7 +796,7 @@ body{
                     </div>
 
                     <div class="event-description">
-                    parcel dispatch scheduled.
+                     Parcel dispatch scheduled.
                     </div>
 
                 </div>
@@ -714,12 +811,13 @@ body{
                     </div>
 
                     <div class="event-time">
-                        09 October 2026 • 02:00 PM – 03:00 PM
+                        09 October 2026 •
+                        02:00 PM – 03:00 PM
                     </div>
 
                     <div class="event-description">
                         Expected delivery window for this
-                        Parcel shipment.
+                        demonstration shipment.
                     </div>
 
                 </div>
@@ -735,7 +833,7 @@ body{
 
 
 <footer class="footer">
-   Track Parcel  • A real shipment tracking service
+    Parcel Tracking Portal• This real shipment tracking service
 </footer>
 
 
@@ -793,4 +891,4 @@ document
 </script>
 
 </body>
-</html>
+    </html>

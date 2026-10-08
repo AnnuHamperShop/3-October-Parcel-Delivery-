@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Parcel Tracking</title>
+<title>Premium Parcel Tracking — DEMO</title>
 
 <style>
 *{
@@ -66,7 +66,7 @@ body{
 .demo-badge{
     font-size:10px;
     font-weight:800;
-    color:#725800;
+    color:#765900;
     background:#fff5d6;
     border:1px solid #f2df9b;
     padding:7px 10px;
@@ -248,7 +248,9 @@ body{
     line-height:1.5;
 }
 
-/* DELIVERY */
+
+/* EXPECTED DELIVERY */
+
 .delivery-card{
     margin-top:18px;
     background:#f5fbff;
@@ -275,51 +277,112 @@ body{
     margin-top:6px;
 }
 
-/* DEMO DELIVERY CHARGE */
-.demo-charge-card{
-    margin-top:18px;
-    background:#fff8df;
-    border:2px solid #f0d477;
-    border-radius:18px;
+
+/* PROFESSIONAL DELIVERY CHARGE */
+
+.professional-charge{
+    margin-top:20px;
+    background:linear-gradient(135deg,#fffdf5,#fff8df);
+    border:1px solid #ead27a;
+    border-radius:20px;
     padding:22px;
-    text-align:center;
-    box-shadow:0 8px 25px rgba(0,0,0,.04);
+    box-shadow:0 10px 30px rgba(80,60,0,.08);
 }
 
-.demo-charge-badge{
-    display:inline-block;
-    background:#fff0c2;
-    color:#765900;
-    border:1px solid #e3c65d;
-    padding:7px 12px;
+.charge-header{
+    display:flex;
+    align-items:center;
+    gap:13px;
+}
+
+.charge-icon{
+    width:45px;
+    height:45px;
+    border-radius:13px;
+    background:#172033;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    font-weight:900;
+}
+
+.charge-heading{
+    font-size:18px;
+    font-weight:850;
+    color:#202838;
+}
+
+.charge-caption{
+    margin-top:3px;
+    font-size:11px;
+    color:#81764e;
+}
+
+.demo-label{
+    margin-left:auto;
+    padding:6px 10px;
     border-radius:20px;
+    background:#fff0bd;
+    border:1px solid #e5c95c;
+    color:#765900;
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.5px;
+}
+
+.charge-divider{
+    height:1px;
+    background:#eadca9;
+    margin:19px 0;
+}
+
+.charge-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.charge-small{
+    font-size:9px;
+    color:#8b8058;
+    font-weight:800;
+    letter-spacing:.7px;
+}
+
+.charge-amount{
+    margin-top:4px;
+    font-size:29px;
+    font-weight:900;
+    color:#5e4800;
+}
+
+.not-payable{
+    background:#fff;
+    border:1px solid #e4ca69;
+    color:#765900;
+    padding:8px 12px;
+    border-radius:8px;
     font-size:10px;
     font-weight:900;
-    letter-spacing:.4px;
+    white-space:nowrap;
 }
 
-.demo-charge-title{
-    margin-top:14px;
-    font-size:18px;
-    font-weight:800;
-    color:#4b3b00;
-}
-
-.demo-charge-amount{
-    margin-top:7px;
-    font-size:28px;
-    font-weight:900;
-    color:#6b5100;
-}
-
-.demo-charge-text{
-    margin-top:8px;
-    color:#776b48;
-    font-size:12px;
+.charge-note{
+    margin-top:16px;
+    padding:12px 14px;
+    background:rgba(255,255,255,.65);
+    border-radius:10px;
+    color:#716744;
+    font-size:11px;
     line-height:1.5;
 }
 
+
 /* TIMELINE */
+
 .timeline-card{
     background:#fff;
     border:1px solid #e8ebf0;
@@ -390,6 +453,9 @@ body{
     font-size:11px;
     padding:30px 15px;
 }
+
+
+/* MOBILE */
 
 @media(max-width:650px){
 
@@ -465,14 +531,24 @@ body{
         font-size:22px;
     }
 
-    .demo-charge-amount{
-        font-size:24px;
+    .charge-content{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .not-payable{
+        margin-top:2px;
+    }
+
+    .charge-amount{
+        font-size:26px;
     }
 }
 </style>
 </head>
 
 <body>
+
 
 <header class="header">
 
@@ -491,7 +567,7 @@ body{
                 </div>
 
                 <div class="logo-sub">
-                    Shipment Tracking
+                    Demo Shipment Tracking
                 </div>
 
             </div>
@@ -499,7 +575,7 @@ body{
         </div>
 
         <div class="demo-badge">
-            PARCEL TRACK ONLY.
+            DEMO ONLY
         </div>
 
     </div>
@@ -509,6 +585,9 @@ body{
 
 <main class="container">
 
+
+    <!-- SEARCH -->
+
     <section class="search-card">
 
         <div class="search-title">
@@ -516,7 +595,7 @@ body{
         </div>
 
         <div class="search-subtitle">
-             tracking page — enter the tracking ID
+            Demo tracking page — enter the demo tracking ID
         </div>
 
         <div class="search-box">
@@ -535,15 +614,30 @@ body{
         </div>
 
         <div id="error">
-            Tracking ID not found.
+            Demo Tracking ID not found.
             Please check the Tracking ID.
         </div>
 
     </section>
 
 
+    <!-- RESULT -->
+
     <div id="result">
 
+
+        <!-- DEMO WARNING -->
+
+        <div class="demo-warning">
+
+            <strong>DEMO / SAMPLE:</strong>
+            This page is for demonstration purposes only.
+            It is not a real courier or payment tracking system.
+
+        </div>
+
+
+        <!-- STATUS -->
 
         <section class="status-card">
 
@@ -552,25 +646,35 @@ body{
                 <div>
 
                     <div class="tracking-label">
-                         Tracking ID
+                        Demo Tracking ID
                     </div>
 
                     <div class="tracking-number">
-                        C-P-DKK500028
+                        DEMOHYD500028
                     </div>
 
                 </div>
 
                 <div class="demo-status">
-                    DELIVERY STATUS
+                    DEMO STATUS
                 </div>
 
+            </div>
+
+            <div class="status-message">
+                This shipment information is displayed as a
+                demonstration sample.
             </div>
 
         </section>
 
 
+        <!-- DETAILS -->
+
         <div class="grid">
+
+
+            <!-- RECEIVER -->
 
             <section class="info-card">
 
@@ -616,6 +720,8 @@ body{
 
             </section>
 
+
+            <!-- ADDRESS -->
 
             <section class="info-card">
 
@@ -695,20 +801,63 @@ body{
         </section>
 
 
-        <!--  DELIVERY CHARGE -->
+        <!-- PROFESSIONAL DELIVERY CHARGE -->
 
-        <section class="pay-charge-card">
+        <section class="professional-charge">
 
-            <div class="pay-charge-badge">
-                NOTE — PAY Delivery Charge Immediately.
+            <div class="charge-header">
+
+                <div class="charge-icon">
+                    ₹
+                </div>
+
+                <div>
+
+                    <div class="charge-heading">
+                        Delivery Charge
+                    </div>
+
+                    <div class="charge-caption">
+                        Shipment delivery information
+                    </div>
+
+                </div>
+
+                <div class="demo-label">
+                    DEMO
+                </div>
+
             </div>
 
-            <div class="Delivery-charge-title">
-                Delivery Charge
+
+            <div class="charge-divider"></div>
+
+
+            <div class="charge-content">
+
+                <div>
+
+                    <div class="charge-small">
+                        DEMONSTRATION AMOUNT
+                    </div>
+
+                    <div class="charge-amount">
+                        ₹1,998.90
+                    </div>
+
+                </div>
+
+                <div class="not-payable">
+                    NOT PAYABLE
+                </div>
+
             </div>
 
-            <div class="Pay-charge-amount">
-                ₹1,998.90
+
+            <div class="charge-note">
+                This delivery charge is displayed for
+                demonstration purposes only. No payment
+                is requested or required.
             </div>
 
         </section>
@@ -719,11 +868,14 @@ body{
         <section class="timeline-card">
 
             <div class="section-title">
-                Parcel Tracking History
+                Demo Tracking History
             </div>
+
 
             <div class="timeline">
 
+
+                <!-- BOOKING -->
 
                 <div class="event">
 
@@ -738,11 +890,13 @@ body{
                     </div>
 
                     <div class="event-description">
-                     shipment record created.
+                        Demo shipment record created.
                     </div>
 
                 </div>
 
+
+                <!-- CONFIRMED -->
 
                 <div class="event">
 
@@ -757,11 +911,13 @@ body{
                     </div>
 
                     <div class="event-description">
-                        Parcel order confirmation recorded.
+                        Demo order confirmation recorded.
                     </div>
 
                 </div>
 
+
+                <!-- CHARGE -->
 
                 <div class="event">
 
@@ -772,16 +928,18 @@ body{
                     </div>
 
                     <div class="event-time">
-                        Delivery Information
+                        Demo Information
                     </div>
 
                     <div class="event-description">
-                        Pay delivery charge:
-                        ₹1,998.90. Not payable.
+                        Demonstration delivery charge:
+                        ₹1,998.90 — not payable.
                     </div>
 
                 </div>
 
+
+                <!-- DISPATCH -->
 
                 <div class="event">
 
@@ -796,11 +954,13 @@ body{
                     </div>
 
                     <div class="event-description">
-                     Parcel dispatch scheduled.
+                        Demo parcel dispatch scheduled.
                     </div>
 
                 </div>
 
+
+                <!-- DELIVERY -->
 
                 <div class="event">
 
@@ -811,8 +971,8 @@ body{
                     </div>
 
                     <div class="event-time">
-                        09 October 2026 •
-                        02:00 PM – 03:00 PM
+                        09 October 2026
+                        • 02:00 PM – 03:00 PM
                     </div>
 
                     <div class="event-description">
@@ -827,19 +987,22 @@ body{
 
         </section>
 
+
     </div>
 
 </main>
 
 
 <footer class="footer">
-    Parcel Tracking Portal• This real shipment tracking service
+
+    DEMO ONLY • Not a real shipment tracking service
+
 </footer>
 
 
 <script>
 
-const VALID_TRACKING_ID = "C-P-DKK500028";
+const VALID_TRACKING_ID = "DEMOHYD500028";
 
 function trackShipment(){
 
@@ -857,6 +1020,7 @@ function trackShipment(){
 
     result.style.display = "none";
     error.style.display = "none";
+
 
     if(trackingId === VALID_TRACKING_ID){
 
@@ -876,7 +1040,9 @@ function trackShipment(){
         error.style.display = "block";
 
     }
+
 }
+
 
 document
 .getElementById("trackingInput")
@@ -891,4 +1057,4 @@ document
 </script>
 
 </body>
-    </html>
+</html>
